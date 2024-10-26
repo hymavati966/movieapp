@@ -1,0 +1,62 @@
+.movie-list-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1200px) {
+  .movie-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2c2c;
+}
+.route-heading {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0px;
+}
+@media screen and(max-width:425px) {
+  .route-heading {
+    text-align: center;
+  }
+}
+.popular-container {
+  padding: 2em;
+}
+.loader-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  background-color: #2c2c2c;
+}
+.page-numbers {
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+@media screen and(max-width:425px) {
+  .page-numbers {
+    text-align: center;
+  }
+}
+.next-page {
+  border-style: none;
+  background-color: rgb(217, 62, 62);
+  color: #ffffff;
+  margin-left: 20px;
+}
+.loader-container {
+  height: 100vh;
+}
